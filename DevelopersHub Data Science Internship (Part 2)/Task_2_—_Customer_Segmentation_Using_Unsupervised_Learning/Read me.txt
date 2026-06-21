@@ -1,0 +1,41 @@
+✅ Task 2 — Customer Segmentation Using Unsupervised Learning
+
+
+Approach:
+
+
+Performed EDA on Age, Annual Income, and Spending Score
+Used the Elbow Method to determine the optimal number of clusters
+Applied K-Means clustering on Income and Spending Score
+Used PCA to visualize clusters when adding Age as a third dimension
+Profiled each cluster and proposed a tailored marketing strategy
+
+
+Key Insights:
+
+
+5 distinct customer segments identified, ranging from premium
+high-income/high-spending customers to disengaged low-income/low-spending customers
+Largest segment: Average Income, Average Spending (Standard Customers)
+Smallest but highest-value segment: High Income, High Spending (Premium Customers)
+Gender showed minimal correlation with spending behavior — income and
+spending score were the true drivers of segmentation
+
+
+Marketing Strategies Proposed:
+
+
+Premium customers → VIP loyalty programs, early access to new products
+Cautious savers (high income, low spending) → personalized conversion offers
+Budget-conscious spenders (low income, high spending) → installment plans, discount bundles
+Standard customers → seasonal promotions, email newsletters
+Low engagement customers → low-cost retention campaigns
+
+
+Skills Demonstrated:
+
+
+Unsupervised learning (K-Means)
+Dimensionality reduction (PCA)
+Customer segmentation
+Strategy development based on data insights

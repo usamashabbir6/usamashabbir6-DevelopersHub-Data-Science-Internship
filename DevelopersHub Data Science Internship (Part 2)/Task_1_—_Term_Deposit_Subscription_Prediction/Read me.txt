@@ -1,0 +1,36 @@
+✅ Task 1 — Term Deposit Subscription Prediction (with Explainable AI)
+
+
+Approach:
+
+
+Loaded and explored ~45,000 customer records with a ~12% subscription rate
+Encoded all categorical features using Label Encoding
+Trained and compared Logistic Regression vs Random Forest
+Evaluated using Confusion Matrix, F1-Score, and ROC/AUC
+Used SHAP TreeExplainer to generate a global summary plot and explain
+5 individual customer predictions with waterfall plots
+
+
+Key Insights:
+
+
+Dataset is heavily imbalanced — only ~12% of customers subscribed
+Random Forest outperformed Logistic Regression on F1-Score and AUC
+Call duration is the single strongest predictor across EDA, feature
+importance, and SHAP analysis
+SHAP revealed that high balance and longer call duration push individual
+predictions toward "yes," while excessive recontact attempts push
+predictions toward "no"
+Combining global feature importance with individual SHAP explanations
+gives both high-level and case-by-case model transparency — essential
+for real banking decisions
+
+
+Skills Demonstrated:
+
+
+Classification modeling and model comparison
+Feature encoding for mixed categorical data
+Model interpretability using Explainable AI (SHAP)
+Customer behavior analysis

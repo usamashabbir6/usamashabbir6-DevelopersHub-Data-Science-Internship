@@ -1,0 +1,38 @@
+✅ Task 4 — Loan Default Risk with Business Cost Optimization
+
+
+Approach:
+
+
+Selected 15 key features from 120+ available columns
+Cleaned DAYS_BIRTH/DAYS_EMPLOYED into interpretable Age and Years Employed
+Trained Logistic Regression and CatBoost, compared using AUC
+Defined business costs: False Negative (missed default) = $10,000,
+False Positive (wrongly rejected customer) = $500
+Tested thresholds from 0.1–0.9 to find the cost-minimizing decision point
+
+
+Results:
+
+ThresholdFalse PositivesFalse NegativesTotal Cost0.5 (default)19,6151,972$29,527,5000.35 (optimized)42,378514$26,329,000
+
+💰 Total Savings: $3,198,500 (10.8% cost reduction)
+
+Key Insights:
+
+
+CatBoost outperformed Logistic Regression on AUC
+Lowering the threshold to 0.35 caught far more real defaulters at the cost
+of more false rejections — a trade-off worth making given the cost asymmetry
+Top predictive features: AMT_GOODS_PRICE, AMT_CREDIT, and Age
+Demonstrates that the "best" threshold isn't the one that maximizes
+accuracy — it's the one that minimizes real financial impact
+
+
+Skills Demonstrated:
+
+
+Binary classification modeling
+Cost-based evaluation metrics
+Risk modeling and threshold optimization
+Feature importance analysis

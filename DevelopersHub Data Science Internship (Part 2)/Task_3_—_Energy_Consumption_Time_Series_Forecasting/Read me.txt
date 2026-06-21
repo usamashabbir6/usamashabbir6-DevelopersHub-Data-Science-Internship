@@ -1,0 +1,36 @@
+✅ Task 3 — Energy Consumption Time Series Forecasting
+
+
+Approach:
+
+
+Parsed and combined Date/Time into a proper datetime index
+Resampled over 2 million minute-level readings into hourly averages
+Engineered time-based features: hour, day of week, month, weekend flag
+Trained and compared ARIMA, Prophet, and XGBoost on the most recent 6 months
+Evaluated all three models using MAE and RMSE
+
+
+Results:
+
+ModelMAERMSEXGBoost0.4960.706Prophet0.6040.747ARIMA0.6690.838
+
+Key Insights:
+
+
+XGBoost achieved the best performance, showing that well-engineered
+time-based features can outperform classical time series models
+Prophet was a close second, confirming strong daily and weekly seasonality
+ARIMA performed weakest since it only models the series' own past values
+without external time-context features
+Clear daily consumption pattern: usage peaks in early morning and evening,
+consistent with cooking and heating routines
+
+
+Skills Demonstrated:
+
+
+Time series forecasting
+Feature engineering for temporal data
+Model comparison and evaluation (MAE, RMSE)
+Temporal data visualization
